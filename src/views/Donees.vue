@@ -36,6 +36,7 @@ div
 <style>
 .donees-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

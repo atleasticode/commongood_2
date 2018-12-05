@@ -32,6 +32,7 @@ div
 <style>
 .buckets-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
