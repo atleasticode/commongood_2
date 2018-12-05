@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    
+    h1 Hey you! Ready for some database fun?
+    p Create a donor: <code> axios.post('/donor', { donorName: 'x' , donorBankAccountNo: 0, amountofVotes: 0, donation: 0 }).then(console.log) </code>
+    p Delete a donor: <code> axios.delete('/donor/id').then(console.log)</code>
+    p 
+    p Create a donee: <code> axios.post('/donee', { doneeName: 'x', wish: { wishName: 'x' , wishExpense: 0 , votes: 0 }}).then(console.log) </code>
+    p Delete a donee: <code> axios.delete('/donee/id').then(console.log) </code>
+    p 
+    p Create a bucket: <code> axios.post('/bucket', { bucketName: 'x', bucketLimit: 0, bucketTotal: 0, wishList: [], donations: [] }).then(console.log)</code>
+    p Add a donee to a bucket: <code>axios.post('/bucket/addDonee', { bucketId: 'x', doneeId: 'x'}).then(console.log) </code>
+    p Add a donation to a bucket: <code>axios.post('/bucket/addDonation', { bucketId: 'x', donorId: 'x'}).then(console.log) </code>
+    p Delete a bucket: <code> axios.delete('/bucket/id').then(console.log)</code>
